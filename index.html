@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="weather-app">
+            <div class="search-box">
+                <input type="text" id="cityInput" placeholder="Enter city name..." />
+                <button id="searchBtn">Search</button>
+            </div>
+
+            <div id="errorMessage" class="error-message"></div>
+
+            <div id="weatherDisplay" class="weather-display">
+                <div class="location">
+                    <h2 id="cityName">City Name</h2>
+                    <p id="country">Country</p>
+                </div>
+
+                <div class="weather-icon">
+                    <img id="weatherIcon" src="" alt="Weather icon" />
+                </div>
+
+                <div class="temperature">
+                    <h1 id="temp">--°C</h1>
+                    <p id="description">Description</p>
+                </div>
+
+                <div class="details">
+                    <div class="detail-item">
+                        <i class="icon">💧</i>
+                        <div>
+                            <p class="detail-value" id="humidity">--%</p>
+                            <p class="detail-label">Humidity</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="icon">💨</i>
+                        <div>
+                            <p class="detail-value" id="windSpeed">-- km/h</p>
+                            <p class="detail-label">Wind Speed</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="icon">🌡️</i>
+                        <div>
+                            <p class="detail-value" id="feelsLike">--°C</p>
+                            <p class="detail-label">Feels Like</p>
+                        </div>
+                    </div>
+                    <div class="detail-item">
+                        <i class="icon">👁️</i>
+                        <div>
+                            <p class="detail-value" id="visibility">-- km</p>
+                            <p class="detail-label">Visibility</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="loading" class="loading">
+                <div class="spinner"></div>
+                <p>Loading...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
